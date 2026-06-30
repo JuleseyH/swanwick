@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swanwick - Brand & Theme Style Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#242424;
+    --grey:#434447;
+    --focus:#F5F3F0;
+    --relax:#E8B847;
+    --button:#FF8C00;
+    --accent:#B8382D;
+    --white:#FFFFFF;
+    --paper:#FBFBFA;
+    --line:#E1E2DF;
+    --f:'Montserrat',-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--f);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 40px}
+  h1,h2,h3,h4{font-weight:700;line-height:1.15}
+  .mono{font-variant-numeric:tabular-nums;letter-spacing:.02em}
+
+  /* header */
+  header{background:var(--ink);color:var(--white);padding:54px 0 46px}
+  header .eyebrow{font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--button)}
+  header h1{font-size:38px;font-weight:800;letter-spacing:-.01em;margin:14px 0 10px}
+  header .logo{max-width:180px;height:auto;margin:14px 0 10px}
+  header p{color:#c9cac8;max-width:560px;font-size:15.5px;font-weight:400}
+  header .meta{margin-top:22px;display:flex;gap:26px;flex-wrap:wrap;font-size:12.5px;color:#9fa1a0;letter-spacing:.02em}
+  header .meta b{color:#e1e2df;font-weight:600}
+
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  .sec-label{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+  .sec-title{font-size:25px;font-weight:700;letter-spacing:-.01em;margin-bottom:6px}
+  .sec-intro{color:var(--grey);font-size:15px;max-width:640px;margin-bottom:30px}
+
+  /* swatches */
+  .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .sw{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--white);cursor:pointer;transition:.18s}
+  .sw:hover{transform:translateY(-3px);box-shadow:0 16px 32px -22px rgba(0,0,0,.4)}
+  .sw .chip{height:108px;display:flex;align-items:flex-end;justify-content:space-between;padding:12px 14px}
+  .sw .copy{font-size:10.5px;font-weight:600;letter-spacing:.04em;background:rgba(255,255,255,.85);color:#242424;padding:4px 8px;border-radius:20px;opacity:0;transition:.18s}
+  .sw:hover .copy{opacity:1}
+  .sw .body{padding:14px 16px 18px}
+  .sw .hex{font-size:15px;font-weight:700;letter-spacing:.03em}
+  .sw .nm{font-size:12.5px;font-weight:600;color:var(--grey);margin:2px 0 8px;text-transform:uppercase;letter-spacing:.06em}
+  .sw .use{font-size:13px;color:var(--grey);line-height:1.45}
+
+  /* schemes */
+  .schemes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .scheme{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .scheme .prev{padding:26px 24px;min-height:150px;display:flex;flex-direction:column;gap:12px}
+  .scheme .prev h4{font-size:19px;font-weight:700}
+  .scheme .prev p{font-size:13px}
+  .scheme .prev .b{align-self:flex-start;font-size:12.5px;font-weight:600;padding:9px 18px;border-radius:30px}
+  .scheme .legend{padding:16px 20px;background:var(--white);font-size:12.5px;color:var(--grey);display:flex;flex-wrap:wrap;gap:6px 16px;border-top:1px solid var(--line)}
+  .scheme .legend span{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:11px;height:11px;border-radius:3px;border:1px solid rgba(0,0,0,.12);display:inline-block}
+  .scheme .nm{padding:13px 20px 0;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+
+  /* type */
+  .type-row{border-top:1px solid var(--line);padding:20px 0;display:grid;grid-template-columns:170px 1fr;gap:24px;align-items:baseline}
+  .type-row:first-of-type{border-top:none}
+  .type-row .spec{font-size:12.5px;color:var(--grey);line-height:1.5}
+  .type-row .spec b{color:var(--ink);display:block;font-size:13px}
+  .t-h1{font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+  .t-h2{font-size:30px;font-weight:700;letter-spacing:-.01em}
+  .t-h3{font-size:21px;font-weight:600}
+  .t-body{font-size:16px;font-weight:400;max-width:520px}
+  .t-ui{font-size:14px;font-weight:500;letter-spacing:.01em}
+  .t-small{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--grey)}
+  .callout{background:#fdf0ea;border:1px solid #f6c8b4;border-radius:10px;padding:14px 18px;font-size:13.5px;color:#9c3f1c;margin-top:24px}
+  .callout b{color:#7d3015}
+
+  /* buttons */
+  .btns{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+  .btn{font-family:var(--f);font-weight:600;font-size:14.5px;padding:13px 26px;border-radius:40px;border:1.5px solid transparent;cursor:pointer}
+  .b-primary{background:var(--button);color:#242424}
+  .b-outline{background:transparent;border-color:var(--ink);color:var(--ink)}
+  .b-dark{background:var(--ink);color:#fff}
+  .on-dark{background:var(--ink);padding:22px;border-radius:12px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .b-ondark{background:var(--button);color:#242424}
+  .b-ondark-ghost{background:transparent;border-color:#fff;color:#fff}
+  .btn-note{font-size:13px;color:var(--grey)}
+
+  /* usage */
+  .rules{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .rules h4{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  .rules.do h4{color:#2f7d4f}
+  .rules.dont h4{color:#b23b3b}
+  .rules ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .rules li{font-size:14px;color:var(--grey);padding-left:24px;position:relative;line-height:1.45}
+  .rules li::before{position:absolute;left:0;top:0;font-weight:700}
+  .do li::before{content:"✓";color:#2f7d4f}
+  .dont li::before{content:"✕";color:#b23b3b}
+
+  /* imagery */
+  .img-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+  .mood{border-radius:12px;min-height:130px;padding:16px;display:flex;align-items:flex-end;color:#fff;font-size:13px;font-weight:600;position:relative;overflow:hidden}
+  .mood span{position:relative;z-index:2}
+  .m-focus{background:linear-gradient(150deg,#d8c9a6,#8a7a52)}
+  .m-relax{background:linear-gradient(150deg,#e8b072,#b9772e)}
+  .m-sleep{background:linear-gradient(150deg,#3a2913,#0f0a05)}
+  
+  .instagram-ref{margin:40px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--white)}
+  .instagram-ref img{width:100%;height:auto;display:block}
+  .instagram-ref-caption{padding:20px 24px;border-top:1px solid var(--line)}
+  .instagram-ref-caption h3{font-size:15px;margin-bottom:8px;color:var(--ink)}
+  .instagram-ref-caption p{font-size:13.5px;color:var(--grey);line-height:1.5}
+  
+  .links{display:flex;gap:14px;flex-wrap:wrap}
+  .link{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:30px;padding:11px 20px;font-size:13.5px;font-weight:600;color:var(--ink)}
+  .link:hover{background:var(--ink);color:#fff}
+  .photo-rules{font-size:14px;color:var(--grey);max-width:660px;line-height:1.6;margin-bottom:22px}
+  .photo-rules b{color:var(--ink)}
+
+  footer{padding:34px 0;color:var(--grey);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  /* toast */
+  #toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:30px;font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:99}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  a{text-decoration:none}
+  @media(max-width:760px){
+    .swatches,.schemes,.img-grid{grid-template-columns:1fr}
+    .rules{grid-template-columns:1fr}
+    .type-row{grid-template-columns:1fr;gap:8px}
+    .t-h1{font-size:34px}
+    .wrap{padding:0 24px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Brand & Theme Style Reference</div>
+    <img class="logo" src="swanwick-logo.png" alt="Swanwick Sleep">
+    <p>The shared source of truth for colour, type and components as we rebuild on the Symmetry theme. Set these once at the global theme level so every page inherits them.</p>
+    <div class="meta">
+      <span><b>Theme</b> &nbsp;Symmetry (Clean Canvas)</span>
+      <span><b>Source</b> &nbsp;Swanwick Branding (Canva)</span>
+      <span><b>Prepared by</b> &nbsp;Two Hoots Digital</span>
+    </div>
+  </div>
+</header>
+
+<!-- COLOURS -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">01 — Core colours</div>
+    <h2 class="sec-title">Five colours, infinite combinations</h2>
+    <p class="sec-intro">Ink, grey, orange, red and the paper white. Nothing else. Load these as CSS variables in Symmetry so every element inherits them and changes globally.</p>
+    <div class="swatches">
+      <div class="sw" data-hex="#242424">
+        <div class="chip" style="background:#242424;"><span class="copy">Click to copy</span></div>
+        <div class="body"><div class="hex">#242424</div><div class="nm">Ink</div><div class="use">Primary text, borders, dark sections</div></div>
+      </div>
+      <div class="sw" data-hex="#434447">
+        <div class="chip" style="background:#434447;"><span class="copy">Click to copy</span></div>
+        <div class="body"><div class="hex">#434447</div><div class="nm">Grey</div><div class="use">Secondary text, disabled states, fine print</div></div>
+      </div>
+      <div class="sw" data-hex="#FF8C00">
+        <div class="chip" style="background:#FF8C00;"><span class="copy">Click to copy</span></div>
+        <div class="body"><div class="hex">#FF8C00</div><div class="nm">Orange</div><div class="use">Calls to action, key icons, highlights</div></div>
+      </div>
+      <div class="sw" data-hex="#B8382D">
+        <div class="chip" style="background:#B8382D;"><span class="copy">Click to copy</span></div>
+        <div class="body"><div class="hex">#B8382D</div><div class="nm">Red</div><div class="use">Occasional accent, feature blocks (use sparingly)</div></div>
+      </div>
+      <div class="sw" data-hex="#FBFBFA">
+        <div class="chip" style="background:#FBFBFA;border:1px solid var(--line);"><span class="copy">Click to copy</span></div>
+        <div class="body"><div class="hex">#FBFBFA</div><div class="nm">Paper</div><div class="use">Page background, light sections, neutral space</div></div>
+      </div>
+      <div class="sw" data-hex="#F5F3F0">
+        <div class="chip" style="background:#F5F3F0;border:1px solid var(--line);"><span class="copy">Click to copy</span></div>
+        <div class="body"><div class="hex">#F5F3F0</div><div class="nm">Focus</div><div class="use">Subtle background tint, low-contrast section breaks</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLOUR SCHEMES -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">02 — Colour schemes</div>
+    <h2 class="sec-title">Four go-to palettes</h2>
+    <p class="sec-intro">Don't make up custom palettes. Apply one of these four to every page section. Combine them top to bottom for rhythm and contrast.</p>
+    <div class="schemes">
+      <div class="scheme">
+        <div class="nm">Scheme 1 · Default (primary)</div>
+        <div class="prev" style="background:#FBFBFA">
+          <h4>The most common layout: light BG, dark text, orange action</h4>
+          <p>Use this scheme on the majority of sections. Change it only when you need visual rhythm or emphasis.</p>
+          <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#FBFBFA"></i>BG #FBFBFA</span>
+          <span><i class="dot" style="background:#242424"></i>Text #242424</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
+          <span><i class="dot" style="background:#434447"></i>Meta #434447</span>
+        </div>
+      </div>
+      <div class="scheme">
+        <div class="nm">Scheme 2 · Dark accent (secondary)</div>
+        <div class="prev" style="background:#242424">
+          <h4 style="color:#fff">Dark section for emphasis</h4>
+          <p style="color:#f5f5f5">Use when you need a visual lift or to spotlight a particular message.</p>
+          <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#242424"></i>BG #242424</span>
+          <span><i class="dot" style="background:#FFFFFF"></i>Text #FFFFFF</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
+          <span><i class="dot" style="background:#E8B847"></i>Accent #E8B847</span>
+        </div>
+      </div>
+      <div class="scheme">
+        <div class="nm">Scheme 3 · Warm beige (alternate)</div>
+        <div class="prev" style="background:#F5F3F0">
+          <h4>Warm light section (optional rhythm)</h4>
+          <p>A softer alternative to plain white. Feels more premium, less sterile.</p>
+          <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#F5F3F0"></i>BG #F5F3F0</span>
+          <span><i class="dot" style="background:#242424"></i>Text #242424</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
+          <span><i class="dot" style="background:#B8382D"></i>Accent #B8382D</span>
+        </div>
+      </div>
+      <div class="scheme">
+        <div class="nm">Scheme 4 · Warm red accent (use rarely)</div>
+        <div class="prev" style="background:#B8382D">
+          <h4 style="color:#fff">One feature band, occasionally</h4>
+          <p style="color:#f5f5f5">Reserve warm red for the odd standout block.</p>
+          <span class="b" style="background:#FFFFFF;color:#242424">Learn more</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#B8382D"></i>BG #B8382D</span>
+          <span><i class="dot" style="background:#FFFFFF"></i>Text #FFFFFF</span>
+          <span><i class="dot" style="background:#FFFFFF"></i>Button #FFFFFF</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Accent #FF8C00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPE -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">03 - Typography</div>
+    <h2 class="sec-title">Montserrat, set with intent</h2>
+    <p class="sec-intro">The whole site is Montserrat, which is in Shopify's font library, so it loads natively in Symmetry with no workaround. The fix for the thin look the site has now is weight, not a new font.</p>
+
+    <div class="type-row">
+      <div class="spec"><b>H1 / Hero</b>Montserrat ExtraBold 800<br>letter-spacing -0.02em</div>
+      <div class="t-h1">Sleep like the sun set on time</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>H2 / Section</b>Montserrat Bold 700</div>
+      <div class="t-h2">Why warm light changes your night</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>H3 / Card</b>Montserrat SemiBold 600</div>
+      <div class="t-h3">For professionals who work past dark</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>Body</b>Montserrat Regular 400<br>16px line-height 1.6</div>
+      <div class="t-body">Block the light that keeps your brain switched on, and wind down the way your body was built to. Backed by science, loved by 500,000 sleepers.</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>UI / Buttons / Menu</b>Montserrat Medium 500</div>
+      <div class="t-ui">Add to cart   The Science   Shop by goal</div>
+    </div>
+    <div class="type-row">
+      <div class="spec"><b>Eyebrow / Label</b>Montserrat SemiBold 600<br>uppercase tracking 0.08em</div>
+      <div class="t-small">Blue-light glasses Circadian lighting</div>
+    </div>
+
+    <div class="callout"><b>The "light font" fix:</b> the current site reads thin because headings sit on Montserrat's lighter and extra light weights. Do not use the extra light version. Set headings to 600-800 and body to 400 (500 for small UI text), and bump base size and line height. That alone lifts the whole site from weedy to premium.</div>
+  </div>
+</section>
+
+<!-- BUTTONS -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">04 — Buttons</div>
+    <h2 class="sec-title">Orange leads, everything else supports</h2>
+    <p class="sec-intro">Primary actions are always the bright orange. Pill radius, Montserrat Medium, generous padding. Define once in Symmetry's button settings.</p>
+    <div class="btns">
+      <button class="btn b-primary">Primary action</button>
+      <button class="btn b-outline">Secondary</button>
+      <span class="btn-note">Primary: <b>#FF8C00</b> fill, dark text. Secondary: ink outline, fills ink on hover.</span>
+    </div>
+    <div class="on-dark">
+      <button class="btn b-ondark">Primary on dark</button>
+      <button class="btn b-ondark-ghost">Ghost on dark</button>
+      <span class="btn-note" style="color:#c9cac8">On dark sections, keep the bright orange. Ghost buttons use a white outline.</span>
+    </div>
+    <div class="callout"><b>Accessibility note:</b> dark text on orange provides good contrast for buttons and large text. For small body text, don't put it on orange, use <b>#242424</b> instead so it stays legible.</div>
+  </div>
+</section>
+
+<!-- USAGE -->
+<section>
+  <div class="wrap">
+    <div class="sec-label">05 — Usage rules</div>
+    <h2 class="sec-title">Keep it consistent</h2>
+    <div class="rules-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
+      <div class="rules do">
+        <h4>Do</h4>
+        <ul>
+          <li>Use orange for CTAs, key icons, borders and small headlines, consistently.</li>
+          <li>Set type globally so every page inherits the same weights.</li>
+          <li>Alternate light, grey and dark schemes down a page for rhythm.</li>
+          <li>Keep main text in #242424 and secondary text in #434447.</li>
+        </ul>
+      </div>
+      <div class="rules dont">
+        <h4>Avoid</h4>
+        <ul>
+          <li>Leaning on red. It's an occasional accent, not a section default.</li>
+          <li>Headings on light Montserrat weights (the current thin look).</li>
+          <li>Small body text sitting on the orange.</li>
+          <li>Stacking equal white boxes, which is what reads as "boxy" now.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGERY -->
+<section style="border-bottom:none">
+  <div class="wrap">
+    <div class="sec-label">06 — Imagery & social</div>
+    <h2 class="sec-title">Three moods, one warm language</h2>
+    <p class="photo-rules">From the brand doc's photography guide. Across all three: <b>warm directional natural light</b> from the top right, the <b>lens is the brightest element</b> and appears to radiate, visible tactile texture (wood grain, woven fabric, soft bedding), shot at <b>85mm f/2.0 with a Kodak Portra 400 film tone</b>. Always avoid cold blue lighting, white fluorescent or clinical light, and bright all-white "Bali-style" bedrooms.</p>
+    <div class="img-grid">
+      <div class="mood m-focus"><span>Focus daytime work<br>Clear lens, bright morning light, oak surfaces</span></div>
+      <div class="mood m-relax"><span>Relax evening wind-down<br>Yellow lens glow, golden hour, woven beige</span></div>
+      <div class="mood m-sleep"><span>Sleep night ritual<br>Amber lens, warm bedside lamp only, dark room</span></div>
+    </div>
+
+    <div class="instagram-ref">
+      <img src="swanwick-instagram.png" alt="Swanwick Instagram feed showing cohesive colour palette and visual language">
+      <div class="instagram-ref-caption">
+        <h3>Colours working together on Instagram</h3>
+        <p>Live example showing the five core colours and four colour schemes applied across our social content. Warm light, tactile product shots, consistent type hierarchy, and orange CTAs throughout. This is how the palette feels in real context.</p>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="link" href="https://drive.google.com/drive/folders/1-HM4acOj4Sh1fqW9C7zyR3_zUHkVG4ox?usp=drive_link" target="_blank">⬡ Swanwick logos</a>
+      <a class="link" href="https://drive.google.com/drive/folders/1Xd8HLHbvRr8cLl5FajqqjgPR6xG5WiJ1?usp=drive_link" target="_blank">⬡ Photo library</a>
+      <a class="link" href="https://www.canva.com/design/DAG2Vyyq3MQ/edit" target="_blank">⬡ Full brand doc (Canva)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%">
+    <span>Swanwick Sleep Brand & Theme Style Reference</span>
+    <span>Two Hoots Digital keep beside the Symmetry theme editor</span>
+  </div>
+</footer>
+
+<div id="toast">Copied</div>
+
+<script>
+  var toast=document.getElementById('toast');
+  document.querySelectorAll('.sw').forEach(function(s){
+    s.addEventListener('click',function(){
+      var hex=s.dataset.hex;
+      var done=function(){toast.textContent=hex+' copied';toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1300)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(hex).then(done,done)}else{done()}
+    });
+  });
+</script>
+</body>
+</html>
