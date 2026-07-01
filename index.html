@@ -58,6 +58,7 @@
   .scheme .prev{padding:26px 24px;min-height:150px;display:flex;flex-direction:column;gap:12px}
   .scheme .prev h4{font-size:19px;font-weight:700}
   .scheme .prev p{font-size:13px}
+  .scheme .prev .eb{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
   .scheme .prev .b{align-self:flex-start;font-size:12.5px;font-weight:600;padding:9px 18px;border-radius:30px}
   .scheme .legend{padding:16px 20px;background:var(--white);font-size:12.5px;color:var(--grey);display:flex;flex-wrap:wrap;gap:6px 16px;border-top:1px solid var(--line)}
   .scheme .legend span{display:inline-flex;align-items:center;gap:6px}
@@ -172,12 +173,13 @@
 <section>
   <div class="wrap">
     <div class="sec-label">02 - Symmetry colour schemes</div>
-    <h2 class="sec-title">Build these four in Theme settings &gt; Colours</h2>
-    <p class="sec-intro">Symmetry assigns a scheme per section. Set up these four, then alternate them down each page. That alternation is what kills the "boxy" feel without any custom work.</p>
+    <h2 class="sec-title">Build these in Theme settings &gt; Colours</h2>
+    <p class="sec-intro">Symmetry assigns a scheme per section. Set these up, then alternate them down each page. That alternation is what kills the "boxy" feel without any custom work. Every scheme carries an eyebrow label in its accent colour, chosen for contrast against the background.</p>
     <div class="schemes">
       <div class="scheme">
         <div class="nm">Scheme 1 - Light (default)</div>
         <div class="prev" style="background:#FFFFFF">
+          <div class="eb" style="color:#B8382D">Circadian science</div>
           <h4 style="color:#242424">Sleep, backed by science</h4>
           <p style="color:#434447">Body copy sits in grey for hierarchy.</p>
           <span class="b" style="background:#FF8C00;color:#242424">Shop now</span>
@@ -186,12 +188,13 @@
           <span><i class="dot" style="background:#FFFFFF"></i>BG #FFFFFF</span>
           <span><i class="dot" style="background:#242424"></i>Text #242424</span>
           <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
-          <span><i class="dot" style="background:#E1E2DF"></i>Border #E1E2DF</span>
+          <span><i class="dot" style="background:#B8382D"></i>Eyebrow #B8382D</span>
         </div>
       </div>
       <div class="scheme">
         <div class="nm">Scheme 2 - Pale</div>
         <div class="prev" style="background:#F5F3F0">
+          <div class="eb" style="color:#B8382D">Evening wind-down</div>
           <h4 style="color:#242424">A calmer way to wind down</h4>
           <p style="color:#434447">Warm brand colours on the pale background.</p>
           <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
@@ -206,6 +209,7 @@
       <div class="scheme">
         <div class="nm">Scheme 3 - Dark</div>
         <div class="prev" style="background:#242424">
+          <div class="eb" style="color:#FF8C00">Blue-light glasses</div>
           <h4 style="color:#fff">The science of better light</h4>
           <p style="color:#E8B847">Warm golden accent brings warmth to dark sections.</p>
           <span class="b" style="background:#FF8C00;color:#242424">Explore</span>
@@ -220,6 +224,7 @@
       <div class="scheme">
         <div class="nm">Scheme 3b - Pale alternative</div>
         <div class="prev" style="background:#F5F3F0">
+          <div class="eb" style="color:#B8382D">Blue-light glasses</div>
           <h4 style="color:#242424">The science of better light</h4>
           <p style="color:#434447">Secondary text in grey for legibility.</p>
           <span class="b" style="background:#FF8C00;color:#242424">Explore</span>
@@ -232,8 +237,24 @@
         </div>
       </div>
       <div class="scheme">
+        <div class="nm">Scheme 5 - Golden (feature)</div>
+        <div class="prev" style="background:#E8B847">
+          <div class="eb" style="color:#B8382D">Relax mode</div>
+          <h4 style="color:#242424">A warmer way to wind down</h4>
+          <p style="color:#242424">Black text on gold, red eyebrow for the pop. White is kept for the dark button only, as it disappears on gold.</p>
+          <span class="b" style="background:#242424;color:#FFFFFF">Shop the range</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#E8B847"></i>BG #E8B847</span>
+          <span><i class="dot" style="background:#242424"></i>Text #242424</span>
+          <span><i class="dot" style="background:#242424"></i>Button #242424</span>
+          <span><i class="dot" style="background:#B8382D"></i>Eyebrow #B8382D</span>
+        </div>
+      </div>
+      <div class="scheme">
         <div class="nm">Scheme 4 - Warm red accent (use rarely)</div>
         <div class="prev" style="background:#B8382D">
+          <div class="eb" style="color:#E8B847">Limited feature</div>
           <h4 style="color:#fff">One feature band, occasionally</h4>
           <p style="color:#f5f5f5">Reserve warm red for the odd standout block.</p>
           <span class="b" style="background:#FFFFFF;color:#242424">Learn more</span>
@@ -242,7 +263,7 @@
           <span><i class="dot" style="background:#B8382D"></i>BG #B8382D</span>
           <span><i class="dot" style="background:#FFFFFF"></i>Text #FFFFFF</span>
           <span><i class="dot" style="background:#FFFFFF"></i>Button #FFFFFF</span>
-          <span><i class="dot" style="background:#FF8C00"></i>Accent #FF8C00</span>
+          <span><i class="dot" style="background:#E8B847"></i>Eyebrow #E8B847</span>
         </div>
       </div>
     </div>
