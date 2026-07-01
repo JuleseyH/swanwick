@@ -103,11 +103,23 @@
 
   /* imagery */
   .img-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
-  .mood{border-radius:12px;min-height:130px;padding:16px;display:flex;align-items:flex-end;color:#fff;font-size:13px;font-weight:600;position:relative;overflow:hidden}
-  .mood span{position:relative;z-index:2}
-  .m-focus{background:linear-gradient(150deg,#d8c9a6,#8a7a52)}
-  .m-relax{background:linear-gradient(150deg,#e8b072,#b9772e)}
-  .m-sleep{background:linear-gradient(150deg,#3a2913,#0f0a05)}
+  .mood{border-radius:14px;min-height:240px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:7px;position:relative;overflow:hidden}
+  .mood > *{position:relative;z-index:2}
+  .mood .m-eb{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  .mood h5{font-size:18px;font-weight:700;line-height:1.15}
+  .mood .m-desc{font-size:12.5px;font-weight:500;line-height:1.5;opacity:.92}
+  .m-focus{color:#2c2413;background:
+    radial-gradient(130% 100% at 88% 6%, rgba(255,255,255,.92), rgba(255,255,255,0) 46%),
+    radial-gradient(55% 48% at 14% 88%, rgba(232,184,71,.3), rgba(232,184,71,0) 62%),
+    linear-gradient(155deg,#f1e8d1 0%,#d9c69a 56%,#b39c66 100%)}
+  .m-relax{color:#3a2708;background:
+    radial-gradient(130% 100% at 88% 8%, rgba(255,240,200,.95), rgba(255,240,200,0) 46%),
+    radial-gradient(55% 50% at 12% 86%, rgba(184,56,45,.3), rgba(184,56,45,0) 62%),
+    linear-gradient(155deg,#f2cd6c 0%,#e8b847 40%,#cf8a2c 100%)}
+  .m-sleep{color:#f6ecd8;background:
+    radial-gradient(120% 95% at 85% 10%, rgba(255,168,74,.6), rgba(255,138,0,0) 50%),
+    radial-gradient(52% 46% at 20% 90%, rgba(184,56,45,.24), rgba(0,0,0,0) 60%),
+    linear-gradient(155deg,#4a3419 0%,#291b0c 56%,#0f0a05 100%)}
   .links{display:flex;gap:14px;flex-wrap:wrap}
   .link{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:30px;padding:11px 20px;font-size:13.5px;font-weight:600;color:var(--ink)}
   .link:hover{background:var(--ink);color:#fff}
@@ -342,10 +354,23 @@
     <h2 class="sec-title">Three moods, one warm language</h2>
     <p class="photo-rules">From the brand doc's photography guide. Across all three: <b>warm directional natural light</b> from the top right, the <b>lens is the brightest element</b> and appears to radiate, visible tactile texture (wood grain, woven fabric, soft bedding), shot at <b>85mm f/2.0 with a Kodak Portra 400 film tone</b>. Always avoid cold blue lighting, white fluorescent or clinical light, and bright all-white "Bali-style" bedrooms.</p>
     <div class="img-grid">
-      <div class="mood m-focus"><span>Focus - daytime work<br>Clear lens, bright morning light, oak surfaces</span></div>
-      <div class="mood m-relax"><span>Relax - evening wind-down<br>Yellow lens glow, golden hour, woven beige</span></div>
-      <div class="mood m-sleep"><span>Sleep - night ritual<br>Amber lens, warm bedside lamp only, dark room</span></div>
+      <div class="mood m-focus">
+        <div class="m-eb" style="color:#B8382D">Focus</div>
+        <h5>Daytime clarity</h5>
+        <div class="m-desc">Clear lens, bright morning light raking across oak and paper. The room feels awake and warm, never cold or clinical.</div>
+      </div>
+      <div class="mood m-relax">
+        <div class="m-eb" style="color:#B8382D">Relax</div>
+        <h5>Evening wind down</h5>
+        <div class="m-desc">Golden hour through the window, the yellow lens catching the light, woven beige and warm ceramics on the side table.</div>
+      </div>
+      <div class="mood m-sleep">
+        <div class="m-eb" style="color:#E8B847">Sleep</div>
+        <h5>Night ritual</h5>
+        <div class="m-desc">One warm bedside lamp, amber lens, deep soft shadows. Everything dim and settled and ready for rest.</div>
+      </div>
     </div>
+    <p class="photo-rules" style="margin-bottom:22px">These are colour direction swatches, not the final shots. The real photography lives in the library below. Each mood keeps the same warm light source glowing from the top right, so the three sit together as one family rather than three separate looks.</p>
     <div class="links">
       <a class="link" href="https://drive.google.com/drive/folders/1-HM4acOj4Sh1fqW9C7zyR3_zUHkVG4ox?usp=drive_link" target="_blank">⬡ Swanwick logos</a>
       <a class="link" href="https://drive.google.com/drive/folders/1Xd8HLHbvRr8cLl5FajqqjgPR6xG5WiJ1?usp=drive_link" target="_blank">⬡ Photo library</a>
