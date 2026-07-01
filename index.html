@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Swanwick - Brand & Theme Style Reference</title>
+<title>Swanwick — Brand & Theme Style Reference</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -30,7 +30,6 @@
   header{background:var(--ink);color:var(--white);padding:54px 0 46px}
   header .eyebrow{font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--button)}
   header h1{font-size:38px;font-weight:800;letter-spacing:-.01em;margin:14px 0 10px}
-  header .logo{max-width:320px;height:auto;margin:14px 0 10px}
   header p{color:#c9cac8;max-width:560px;font-size:15.5px;font-weight:400}
   header .meta{margin-top:22px;display:flex;gap:26px;flex-wrap:wrap;font-size:12.5px;color:#9fa1a0;letter-spacing:.02em}
   header .meta b{color:#e1e2df;font-weight:600}
@@ -107,13 +106,6 @@
   .m-focus{background:linear-gradient(150deg,#d8c9a6,#8a7a52)}
   .m-relax{background:linear-gradient(150deg,#e8b072,#b9772e)}
   .m-sleep{background:linear-gradient(150deg,#3a2913,#0f0a05)}
-  
-  .instagram-ref{margin:40px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--white)}
-  .instagram-ref img{width:100%;height:auto;display:block}
-  .instagram-ref-caption{padding:20px 24px;border-top:1px solid var(--line)}
-  .instagram-ref-caption h3{font-size:15px;margin-bottom:8px;color:var(--ink)}
-  .instagram-ref-caption p{font-size:13.5px;color:var(--grey);line-height:1.5}
-  
   .links{display:flex;gap:14px;flex-wrap:wrap}
   .link{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:30px;padding:11px 20px;font-size:13.5px;font-weight:600;color:var(--ink)}
   .link:hover{background:var(--ink);color:#fff}
@@ -141,91 +133,66 @@
 <header>
   <div class="wrap">
     <div class="eyebrow">Brand & Theme Style Reference</div>
-    <img class="logo" src="swanwick-logo.png" alt="Swanwick Sleep">
+    <h1>Swanwick Sleep</h1>
     <p>The shared source of truth for colour, type and components as we rebuild on the Symmetry theme. Set these once at the global theme level so every page inherits them.</p>
     <div class="meta">
-      <span><b>Theme</b> &nbsp;Symmetry (Clean Canvas)</span>
-      <span><b>Source</b> &nbsp;Swanwick Branding (Canva)</span>
-      <span><b>Prepared by</b> &nbsp;Two Hoots Digital</span>
+      <span><b>Theme</b> Symmetry (Clean Canvas)</span>
+      <span><b>Source</b> Swanwick Branding (Canva)</span>
+      <span><b>Prepared by</b> Two Hoots Digital</span>
     </div>
   </div>
 </header>
 
-<!-- COLOURS -->
 <section>
   <div class="wrap">
-    <div class="sec-label">01 — Core colours</div>
-    <h2 class="sec-title">Six colours, infinite combinations</h2>
-    <p class="sec-intro">Ink, grey, focus, relax, sleep and paper. Nothing else. Load these as CSS variables in Symmetry so every element inherits them and changes globally.</p>
+    <div class="sec-label">01 - Colour palette</div>
+    <h2 class="sec-title">Three warm moods plus buttons and accents</h2>
+    <p class="sec-intro">Warm cream for daylight clarity, golden amber for evening, bright orange for all actions, and warm coral-red for accents only. Tap any swatch to copy the hex.</p>
     <div class="swatches">
-      <div class="sw" data-hex="#242424">
-        <div class="chip" style="background:#242424;"><span class="copy">Click to copy</span></div>
-        <div class="body"><div class="hex">#242424</div><div class="nm">Ink</div><div class="use">Primary text, borders, dark sections</div></div>
-      </div>
-      <div class="sw" data-hex="#434447">
-        <div class="chip" style="background:#434447;"><span class="copy">Click to copy</span></div>
-        <div class="body"><div class="hex">#434447</div><div class="nm">Grey</div><div class="use">Secondary text, disabled states, fine print</div></div>
-      </div>
-      <div class="sw" data-hex="#FF8C00">
-        <div class="chip" style="background:#FF8C00;"><span class="copy">Click to copy</span></div>
-        <div class="body"><div class="hex">#FF8C00</div><div class="nm">Relax</div><div class="use">Calls to action, key icons, highlights</div></div>
-      </div>
-      <div class="sw" data-hex="#B8382D">
-        <div class="chip" style="background:#B8382D;"><span class="copy">Click to copy</span></div>
-        <div class="body"><div class="hex">#B8382D</div><div class="nm">Sleep</div><div class="use">Occasional accent, feature blocks (use sparingly)</div></div>
-      </div>
-      <div class="sw" data-hex="#FBFBFA">
-        <div class="chip" style="background:#FBFBFA;border:1px solid var(--line);"><span class="copy">Click to copy</span></div>
-        <div class="body"><div class="hex">#FBFBFA</div><div class="nm">Paper</div><div class="use">Page background, light sections, neutral space</div></div>
-      </div>
-      <div class="sw" data-hex="#F5F3F0">
-        <div class="chip" style="background:#F5F3F0;border:1px solid var(--line);"><span class="copy">Click to copy</span></div>
-        <div class="body"><div class="hex">#F5F3F0</div><div class="nm">Focus</div><div class="use">Subtle background tint, low-contrast section breaks</div></div>
-      </div>
+      <div class="sw" data-hex="#F5F3F0"><div class="chip" style="background:#F5F3F0"><span></span><span class="copy">Tap to copy</span></div><div class="body"><div class="hex">#F5F3F0</div><div class="nm">Focus - light</div><div class="use">Daylight mode for clarity glasses. Warm soft backgrounds, gentle accents, visual breathing room.</div></div></div>
+      <div class="sw" data-hex="#E8B847"><div class="chip" style="background:#E8B847"><span></span><span class="copy" style="background:rgba(255,255,255,.9)">Tap to copy</span></div><div class="body"><div class="hex">#E8B847</div><div class="nm">Relax - warm</div><div class="use">Evening wind-down mood. Warm golden tones for secondary actions, warmth, and inviting sections.</div></div></div>
+      <div class="sw" data-hex="#FF8C00"><div class="chip" style="background:#FF8C00"><span></span><span class="copy" style="background:rgba(255,255,255,.9)">Tap to copy</span></div><div class="body"><div class="hex">#FF8C00</div><div class="nm">Button - bright</div><div class="use">All primary actions and CTAs. Bright and energetic. Use consistently for main buttons and focal points.</div></div></div>
+      <div class="sw" data-hex="#B8382D"><div class="chip" style="background:#B8382D"><span></span><span class="copy" style="background:rgba(255,255,255,.9)">Tap to copy</span></div><div class="body"><div class="hex">#B8382D</div><div class="nm">Accent - red</div><div class="use">Highlights and accents only. Warm dark red for standout borders, icons, and occasional feature bands.</div></div></div>
+      <div class="sw" data-hex="#242424"><div class="chip" style="background:#242424"><span></span><span class="copy" style="background:rgba(255,255,255,.9)">Tap to copy</span></div><div class="body"><div class="hex">#242424</div><div class="nm">Ink - near-black</div><div class="use">Main text, titles, deep backgrounds and high contrast.</div></div></div>
+      <div class="sw" data-hex="#FFFFFF"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid var(--line)"><span></span><span class="copy">Tap to copy</span></div><div class="body"><div class="hex">#FFFFFF</div><div class="nm">White</div><div class="use">Clean backgrounds, and reverse text on dark or colored buttons.</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- COLOUR SCHEMES -->
 <section>
   <div class="wrap">
-    <div class="sec-label">02 — Colour schemes</div>
-    <h2 class="sec-title">Four go-to palettes</h2>
-    <p class="sec-intro">Don't make up custom palettes. Apply one of these four to every page section. Combine them top to bottom for rhythm and contrast.</p>
+    <div class="sec-label">01b - In practice</div>
+    <h2 class="sec-title">How the palette works on Instagram</h2>
+    <p class="sec-intro">These colours in action across the Swanwick feed. Notice how the warm palette creates visual cohesion and emotional consistency across all content.</p>
+    <img src="swanwick-instagram.png" style="width:100%;border-radius:12px;margin-top:24px" alt="Swanwick Instagram feed showing colour palette in action">
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-label">02 - Symmetry colour schemes</div>
+    <h2 class="sec-title">Build these four in Theme settings &gt; Colours</h2>
+    <p class="sec-intro">Symmetry assigns a scheme per section. Set up these four, then alternate them down each page. That alternation is what kills the "boxy" feel without any custom work.</p>
     <div class="schemes">
       <div class="scheme">
-        <div class="nm">Scheme 1 · Default (primary)</div>
-        <div class="prev" style="background:#FBFBFA">
-          <h4>The most common layout: light BG, dark text, orange action</h4>
-          <p>Use this scheme on the majority of sections. Change it only when you need visual rhythm or emphasis.</p>
-          <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
+        <div class="nm">Scheme 1 - Light (default)</div>
+        <div class="prev" style="background:#FFFFFF">
+          <h4 style="color:#242424">Sleep, backed by science</h4>
+          <p style="color:#434447">Body copy sits in grey for hierarchy.</p>
+          <span class="b" style="background:#FF8C00;color:#242424">Shop now</span>
         </div>
         <div class="legend">
-          <span><i class="dot" style="background:#FBFBFA"></i>BG #FBFBFA</span>
+          <span><i class="dot" style="background:#FFFFFF"></i>BG #FFFFFF</span>
           <span><i class="dot" style="background:#242424"></i>Text #242424</span>
           <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
-          <span><i class="dot" style="background:#434447"></i>Meta #434447</span>
+          <span><i class="dot" style="background:#E1E2DF"></i>Border #E1E2DF</span>
         </div>
       </div>
       <div class="scheme">
-        <div class="nm">Scheme 2 · Dark accent (secondary)</div>
-        <div class="prev" style="background:#242424">
-          <h4 style="color:#fff">Dark section for emphasis</h4>
-          <p style="color:#f5f5f5">Use when you need a visual lift or to spotlight a particular message.</p>
-          <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
-        </div>
-        <div class="legend">
-          <span><i class="dot" style="background:#242424"></i>BG #242424</span>
-          <span><i class="dot" style="background:#FFFFFF"></i>Text #FFFFFF</span>
-          <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
-          <span><i class="dot" style="background:#E8B847"></i>Accent #E8B847</span>
-        </div>
-      </div>
-      <div class="scheme">
-        <div class="nm">Scheme 3 · Warm beige (alternate)</div>
+        <div class="nm">Scheme 2 - Pale</div>
         <div class="prev" style="background:#F5F3F0">
-          <h4>Warm light section (optional rhythm)</h4>
-          <p>A softer alternative to plain white. Feels more premium, less sterile.</p>
+          <h4 style="color:#242424">A calmer way to wind down</h4>
+          <p style="color:#434447">Warm brand colours on the pale background.</p>
           <span class="b" style="background:#FF8C00;color:#242424">Learn more</span>
         </div>
         <div class="legend">
@@ -236,7 +203,35 @@
         </div>
       </div>
       <div class="scheme">
-        <div class="nm">Scheme 4 · Warm red accent (use rarely)</div>
+        <div class="nm">Scheme 3 - Dark</div>
+        <div class="prev" style="background:#242424">
+          <h4 style="color:#fff">The science of better light</h4>
+          <p style="color:#E8B847">Warm golden accent brings warmth to dark sections.</p>
+          <span class="b" style="background:#FF8C00;color:#242424">Explore</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#242424"></i>BG #242424</span>
+          <span><i class="dot" style="background:#FFFFFF"></i>Text #FFFFFF</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Accent #FF8C00</span>
+        </div>
+      </div>
+      <div class="scheme">
+        <div class="nm">Scheme 3b - Pale alternative</div>
+        <div class="prev" style="background:#F5F3F0">
+          <h4 style="color:#242424">The science of better light</h4>
+          <p style="color:#434447">Secondary text in grey for legibility.</p>
+          <span class="b" style="background:#FF8C00;color:#242424">Explore</span>
+        </div>
+        <div class="legend">
+          <span><i class="dot" style="background:#F5F3F0"></i>BG #F5F3F0</span>
+          <span><i class="dot" style="background:#242424"></i>Text #242424</span>
+          <span><i class="dot" style="background:#FF8C00"></i>Button #FF8C00</span>
+          <span><i class="dot" style="background:#B8382D"></i>Accent #B8382D</span>
+        </div>
+      </div>
+      <div class="scheme">
+        <div class="nm">Scheme 4 - Warm red accent (use rarely)</div>
         <div class="prev" style="background:#B8382D">
           <h4 style="color:#fff">One feature band, occasionally</h4>
           <p style="color:#f5f5f5">Reserve warm red for the odd standout block.</p>
@@ -253,7 +248,6 @@
   </div>
 </section>
 
-<!-- TYPE -->
 <section>
   <div class="wrap">
     <div class="sec-label">03 - Typography</div>
@@ -273,28 +267,27 @@
       <div class="t-h3">For professionals who work past dark</div>
     </div>
     <div class="type-row">
-      <div class="spec"><b>Body</b>Montserrat Regular 400<br>16px line-height 1.6</div>
+      <div class="spec"><b>Body</b>Montserrat Regular 400<br>16px - line-height 1.6</div>
       <div class="t-body">Block the light that keeps your brain switched on, and wind down the way your body was built to. Backed by science, loved by 500,000 sleepers.</div>
     </div>
     <div class="type-row">
       <div class="spec"><b>UI / Buttons / Menu</b>Montserrat Medium 500</div>
-      <div class="t-ui">Add to cart   The Science   Shop by goal</div>
+      <div class="t-ui">Add to cart - The Science - Shop by goal</div>
     </div>
     <div class="type-row">
-      <div class="spec"><b>Eyebrow / Label</b>Montserrat SemiBold 600<br>uppercase tracking 0.08em</div>
-      <div class="t-small">Blue-light glasses Circadian lighting</div>
+      <div class="spec"><b>Eyebrow / Label</b>Montserrat SemiBold 600<br>uppercase - tracking 0.08em</div>
+      <div class="t-small">Blue-light glasses - Circadian lighting</div>
     </div>
 
     <div class="callout"><b>The "light font" fix:</b> the current site reads thin because headings sit on Montserrat's lighter and extra light weights. Do not use the extra light version. Set headings to 600-800 and body to 400 (500 for small UI text), and bump base size and line height. That alone lifts the whole site from weedy to premium.</div>
   </div>
 </section>
 
-<!-- BUTTONS -->
 <section>
   <div class="wrap">
-    <div class="sec-label">04 — Buttons</div>
-    <h2 class="sec-title">Relax leads, everything else supports</h2>
-    <p class="sec-intro">Primary actions are always the bright relax. Pill radius, Montserrat Medium, generous padding. Define once in Symmetry's button settings.</p>
+    <div class="sec-label">04 - Buttons</div>
+    <h2 class="sec-title">Orange leads, everything else supports</h2>
+    <p class="sec-intro">Primary actions are always the bright orange. Pill radius, Montserrat Medium, generous padding. Define once in Symmetry's button settings.</p>
     <div class="btns">
       <button class="btn b-primary">Primary action</button>
       <button class="btn b-outline">Secondary</button>
@@ -309,16 +302,15 @@
   </div>
 </section>
 
-<!-- USAGE -->
 <section>
   <div class="wrap">
-    <div class="sec-label">05 — Usage rules</div>
+    <div class="sec-label">05 - Usage rules</div>
     <h2 class="sec-title">Keep it consistent</h2>
     <div class="rules-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
       <div class="rules do">
         <h4>Do</h4>
         <ul>
-          <li>Use relax for CTAs, key icons, borders and small headlines, consistently.</li>
+          <li>Use orange for CTAs, key icons, borders and small headlines, consistently.</li>
           <li>Set type globally so every page inherits the same weights.</li>
           <li>Alternate light, grey and dark schemes down a page for rhythm.</li>
           <li>Keep main text in #242424 and secondary text in #434447.</li>
@@ -327,9 +319,9 @@
       <div class="rules dont">
         <h4>Avoid</h4>
         <ul>
-          <li>Leaning on sleep. It's an occasional accent, not a section default.</li>
+          <li>Leaning on red. It's an occasional accent, not a section default.</li>
           <li>Headings on light Montserrat weights (the current thin look).</li>
-          <li>Small body text sitting on the relax.</li>
+          <li>Small body text sitting on the orange.</li>
           <li>Stacking equal white boxes, which is what reads as "boxy" now.</li>
         </ul>
       </div>
@@ -337,26 +329,16 @@
   </div>
 </section>
 
-<!-- IMAGERY -->
 <section style="border-bottom:none">
   <div class="wrap">
-    <div class="sec-label">06 — Imagery & social</div>
+    <div class="sec-label">06 - Imagery</div>
     <h2 class="sec-title">Three moods, one warm language</h2>
     <p class="photo-rules">From the brand doc's photography guide. Across all three: <b>warm directional natural light</b> from the top right, the <b>lens is the brightest element</b> and appears to radiate, visible tactile texture (wood grain, woven fabric, soft bedding), shot at <b>85mm f/2.0 with a Kodak Portra 400 film tone</b>. Always avoid cold blue lighting, white fluorescent or clinical light, and bright all-white "Bali-style" bedrooms.</p>
     <div class="img-grid">
-      <div class="mood m-focus"><span>Focus daytime work<br>Clear lens, bright morning light, oak surfaces</span></div>
-      <div class="mood m-relax"><span>Relax evening wind-down<br>Yellow lens glow, golden hour, woven beige</span></div>
-      <div class="mood m-sleep"><span>Sleep night ritual<br>Amber lens, warm bedside lamp only, dark room</span></div>
+      <div class="mood m-focus"><span>Focus - daytime work<br>Clear lens, bright morning light, oak surfaces</span></div>
+      <div class="mood m-relax"><span>Relax - evening wind-down<br>Yellow lens glow, golden hour, woven beige</span></div>
+      <div class="mood m-sleep"><span>Sleep - night ritual<br>Amber lens, warm bedside lamp only, dark room</span></div>
     </div>
-
-    <div class="instagram-ref">
-      <img src="swanwick-instagram.png" alt="Swanwick Instagram feed showing cohesive colour palette and visual language">
-      <div class="instagram-ref-caption">
-        <h3>Colours working together on Instagram</h3>
-        <p>Live example showing the five core colours and four colour schemes applied across our social content. Warm light, tactile product shots, consistent type hierarchy, and orange CTAs throughout. This is how the palette feels in real context.</p>
-      </div>
-    </div>
-
     <div class="links">
       <a class="link" href="https://drive.google.com/drive/folders/1-HM4acOj4Sh1fqW9C7zyR3_zUHkVG4ox?usp=drive_link" target="_blank">⬡ Swanwick logos</a>
       <a class="link" href="https://drive.google.com/drive/folders/1Xd8HLHbvRr8cLl5FajqqjgPR6xG5WiJ1?usp=drive_link" target="_blank">⬡ Photo library</a>
@@ -367,8 +349,8 @@
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%">
-    <span>Swanwick Sleep Brand & Theme Style Reference</span>
-    <span>Two Hoots Digital keep beside the Symmetry theme editor</span>
+    <span>Swanwick Sleep - Brand & Theme Style Reference</span>
+    <span>Two Hoots Digital - keep beside the Symmetry theme editor</span>
   </div>
 </footer>
 
