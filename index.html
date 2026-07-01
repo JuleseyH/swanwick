@@ -171,6 +171,32 @@
   .cyc svg{width:100%;height:auto;display:block}
   .cyc-legend{max-width:640px;margin-top:26px}
 
+  /* proof band */
+  .pb{display:flex;flex-direction:column;gap:16px}
+  .pb .band{border-radius:14px;padding:24px 26px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:24px;align-items:center;border:1px solid var(--line)}
+  .pb .eyebrow2{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  .pb h3{font-size:20px;font-weight:800;letter-spacing:-.01em;line-height:1.16;margin-top:6px}
+  .pb .lead p{font-size:14px;line-height:1.55;margin-top:8px}
+  .pb .stats{display:flex;flex-wrap:wrap;gap:16px 22px}
+  .pb .stat .n{font-size:25px;font-weight:800;line-height:1}
+  .pb .stat .t{font-size:12px;font-weight:500;line-height:1.4;margin-top:5px;max-width:140px}
+  .pb .single{font-size:14.5px;font-weight:600;line-height:1.5}
+  .pb .src{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-top:12px;opacity:.85}
+  .b-focus{background:#F5F3F0;border-color:#e1ddd3}
+  .b-focus .eyebrow2{color:#B8382D}
+  .b-focus h3,.b-focus .single,.b-focus .stat .n{color:#242424}
+  .b-focus .lead p,.b-focus .stat .t,.b-focus .src{color:#434447}
+  .b-relax{background:#E8B847;border-color:#d29a1f}
+  .b-relax .eyebrow2{color:#7d3015}
+  .b-relax h3,.b-relax .single,.b-relax .stat .n{color:#242424}
+  .b-relax .lead p,.b-relax .stat .t{color:#3a2708}
+  .b-relax .src{color:#5c4410}
+  .b-sleep{background:#B8382D;border-color:#8f2a22}
+  .b-sleep .eyebrow2{color:#F2CD6C}
+  .b-sleep h3,.b-sleep .single,.b-sleep .stat .n{color:#FFFFFF}
+  .b-sleep .lead p,.b-sleep .stat .t{color:#f6e0dd}
+  .b-sleep .src{color:#F2CD6C}
+
   footer{padding:34px 0;color:var(--grey);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
   /* toast */
@@ -179,7 +205,7 @@
 
   a{text-decoration:none}
   @media(max-width:760px){
-    .swatches,.schemes,.img-grid,.vp .pillars,.cyc{grid-template-columns:1fr}
+    .swatches,.schemes,.img-grid,.vp .pillars,.cyc,.pb .band{grid-template-columns:1fr}
     .vp .promise{font-size:27px}
     .rules{grid-template-columns:1fr}
     .type-row{grid-template-columns:1fr;gap:8px}
@@ -470,9 +496,66 @@
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <div class="sec-label">08 - Proof</div>
+    <h2 class="sec-title">What the science means for your day</h2>
+    <p class="sec-intro">Every result here is independently measured, then put in plain terms, what it actually changes about how you feel and live. Each band is in its product colour so it is clear which part of the day the result belongs to.</p>
+
+    <div class="pb">
+      <div class="band b-focus">
+        <div class="lead">
+          <div class="eyebrow2">Focus, daytime</div>
+          <h3>Clear headed through the whole day</h3>
+          <p>Stay sharp across hours of screens, then step away at night without that wired, glassy eyed feeling.</p>
+        </div>
+        <div>
+          <div class="single">Up to 98% of high energy blue light filtered at 400nm, easing off across the range so your vision stays clear.</div>
+          <div class="src">Colts Laboratories, independent lens test</div>
+        </div>
+      </div>
+
+      <div class="band b-relax">
+        <div class="lead">
+          <div class="eyebrow2">Relax, evening</div>
+          <h3>Wind down before you reach the bedroom</h3>
+          <p>Give your body the early signal that the day is closing, so you arrive at bed already calm instead of switching off cold.</p>
+        </div>
+        <div>
+          <div class="single">Blue light across 400 to 450nm cut, natural vision kept, and UV below 380nm blocked.</div>
+          <div class="src">Colts Laboratories, independent lens test</div>
+        </div>
+      </div>
+
+      <div class="band b-sleep">
+        <div class="lead">
+          <div class="eyebrow2">Sleep, night</div>
+          <h3>Wake up like you actually slept</h3>
+          <p>Fall asleep sooner, wake less through the night, and get more of the deep sleep your body repairs itself in.</p>
+        </div>
+        <div>
+          <div class="stats">
+            <div class="stat"><div class="n">11 min</div><div class="t">faster to fall asleep</div></div>
+            <div class="stat"><div class="n">24 min</div><div class="t">less time awake in the night</div></div>
+            <div class="stat"><div class="n">+14%</div><div class="t">more time in deep sleep</div></div>
+            <div class="stat"><div class="n">73%</div><div class="t">reported better sleep overall</div></div>
+          </div>
+          <div class="src">SleepScore Labs, four week validated study</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="anno">The peer reviewed study behind the brand, run with the University of Washington and Indiana University, appeared in the Journal of Applied Psychology and was covered by Harvard Business Review, which reported around a 9% lift in next day task performance. The glasses are FDA registered. Keep the Sleep figures tied to the Sleep glasses, since that is where they were measured, and always state the Focus number as up to 98% at 400nm rather than a flat blanket claim. The proof is one click away below, so nothing here asks the reader to take it on faith.</p>
+    <div class="links" style="margin-top:8px">
+      <a class="link" href="https://www.swanwicksleep.com/pages/swanwick-sleep-science" target="_blank">See the studies</a>
+      <a class="link" href="https://swanwicksleep.zendesk.com/hc/en-us/articles/360003219995-Can-I-See-Independent-Tests-Showing-What-Percentage-Of-Blue-Light-Swannies-Block" target="_blank">See the lab tests</a>
+    </div>
+  </div>
+</section>
+
 <section style="border-bottom:none">
   <div class="wrap">
-    <div class="sec-label">08 - The wellness cycle</div>
+    <div class="sec-label">09 - The wellness cycle</div>
     <h2 class="sec-title">One idea, shaped to fit the screen</h2>
     <p class="sec-intro">This is how we show that Focus, Relax and Sleep feed into each other. The content never changes from one device to the next. The layout is what adapts, so the loop reads clearly whether someone is on a laptop or holding a phone.</p>
 
