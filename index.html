@@ -150,9 +150,18 @@
   .p-sleep .prod{color:#F2CD6C}
   .p-sleep p{color:#f6e0dd}
   .vp .cta{display:inline-block;background:var(--button);color:#242424;font-weight:600;font-size:15px;padding:14px 32px;border-radius:40px}
-  .vp .trust{font-size:13px;color:var(--grey);margin-top:14px}
+  .vp .trust{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:20px}
+  .vp .trust span{font-size:13.5px;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:8px}
+  .vp .trust span::before{content:"\2713";color:#FF8C00;font-weight:800;font-size:14px}
   .anno{font-size:13.5px;color:var(--grey);max-width:660px;line-height:1.6;margin-top:26px}
   .anno b{color:var(--ink)}
+  /* wellness cycle */
+  .cyc{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,0.62fr);gap:26px;align-items:start;margin-bottom:6px}
+  .cyc .lbl{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:10px}
+  .cyc .frame{border:1px solid var(--line);border-radius:14px;background:#fbfbfa;padding:16px}
+  .cyc .frame.phone{max-width:300px;border-radius:22px;padding:14px 12px}
+  .cyc svg{width:100%;height:auto;display:block}
+  .cyc-legend{max-width:640px;margin-top:26px}
 
   footer{padding:34px 0;color:var(--grey);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
@@ -162,7 +171,7 @@
 
   a{text-decoration:none}
   @media(max-width:760px){
-    .swatches,.schemes,.img-grid,.vp .pillars{grid-template-columns:1fr}
+    .swatches,.schemes,.img-grid,.vp .pillars,.cyc{grid-template-columns:1fr}
     .vp .promise{font-size:27px}
     .rules{grid-template-columns:1fr}
     .type-row{grid-template-columns:1fr;gap:8px}
@@ -408,7 +417,7 @@
   </div>
 </section>
 
-<section style="border-bottom:none">
+<section>
   <div class="wrap">
     <div class="sec-label">07 - Core value proposition</div>
     <h2 class="sec-title">The one promise that leads the homepage</h2>
@@ -439,10 +448,175 @@
         </div>
       </div>
       <a class="cta" href="#">Build your system</a>
-      <div class="trust">Trusted by over 500,000 sleepers.</div>
+      <div class="trust">
+        <span>Built on circadian science</span>
+        <span>Lens performance you can measure</span>
+        <span>Backed by research on light and sleep</span>
+      </div>
     </div>
 
-    <p class="anno">Notes for build. The three pillars run in cycle order, Focus, Relax, Sleep, each in its own brand colour and headed with the mood name and what sits in it, so a first-time visitor can see at a glance that the system runs across the whole day. Each one then leads with a feeling rather than a feature. Between them they cover the range of people Swanwick sells to, the screen-bound professional, the student or gamer, the parent who cannot switch off, and the light sleeper, without labelling anyone. The <b>trust line</b> sits by the button where reassurance matters most, and the <b>Build your system</b> wording pushes the bundle rather than a single product.</p>
+    <p class="anno">Notes for build. The three pillars run in cycle order, Focus, Relax, Sleep, each in its own brand colour and headed with the mood name and what sits in it, so a first-time visitor can see at a glance that the system runs across the whole day. Each one then leads with a feeling rather than a feature. Between them they cover the range of people Swanwick sells to, the screen-bound professional, the student or gamer, the parent who cannot switch off, and the light sleeper, without labelling anyone. The <b>Build your system</b> wording pushes the bundle rather than a single product. The <b>trust row</b> sits right by the button and leads with the science rather than a customer count, since that is the stronger proof for this audience. Swap those three points for your verified specifics, the lens test figures, the research you cite, any specialist backing, before this goes live. The half a million customers figure still earns its place as social proof, better placed near reviews or the buy button than here. Trust is worth weaving into every section, not just this one.</p>
+  </div>
+</section>
+
+<section style="border-bottom:none">
+  <div class="wrap">
+    <div class="sec-label">08 - The wellness cycle</div>
+    <h2 class="sec-title">One idea, shaped to fit the screen</h2>
+    <p class="sec-intro">This is how we show that Focus, Relax and Sleep feed into each other. The content never changes from one device to the next. The layout is what adapts, so the loop reads clearly whether someone is on a laptop or holding a phone.</p>
+
+    <div class="cyc">
+      <div class="col">
+        <div class="lbl">On a wider screen</div>
+        <div class="frame">
+          <svg class="swk-diagram" viewBox="0 0 720 600" style="width:100%;height:auto;display:block">
+      <defs>
+        <marker id="swk-arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+          <path d="M2 2 L9 6 L2 10" fill="none" stroke="#ff8c00" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>
+        </marker>
+        <filter id="swk-shadow" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="7" stdDeviation="13" flood-color="#242424" flood-opacity="0.13"></feDropShadow>
+        </filter>
+      </defs>
+
+      <!-- Cycle guide ring -->
+      <circle cx="360" cy="304" r="195" fill="none" stroke="#e6e3de" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"></circle>
+
+      <!-- Connective arrows -->
+      <g fill="none" stroke="#ff8c00" stroke-width="2.4" stroke-linecap="round" marker-end="url(#swk-arrow)">
+        <path d="M402.1 181.7 Q505.1 219.9 486.9 328.3"></path>
+        <path d="M445 401 Q360 471 275 401"></path>
+        <path d="M233.1 328.3 Q214.9 219.9 317.9 181.7"></path>
+      </g>
+
+      <!-- Transition labels (stage name + customer experience) -->
+      <g text-anchor="middle">
+        <text x="560" y="188" style="font-family:Montserrat,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:2px;fill:#ff8c00">PEAK PERFORMANCE</text>
+        <text x="560" y="209" style="font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;letter-spacing:0.1px;fill:#242424">You perform at your best</text>
+
+        <text x="360" y="508" style="font-family:Montserrat,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:2px;fill:#ff8c00">READY FOR SLEEP</text>
+        <text x="360" y="529" style="font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;letter-spacing:0.1px;fill:#242424">You drift off with ease</text>
+
+        <text x="160" y="188" style="font-family:Montserrat,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:2px;fill:#ff8c00">FULL RECOVERY</text>
+        <text x="160" y="209" style="font-family:Montserrat,sans-serif;font-size:16px;font-weight:600;letter-spacing:0.1px;fill:#242424">You wake fully restored</text>
+      </g>
+
+      <!-- FOCUS node -->
+      <g filter="url(#swk-shadow)">
+        <circle cx="360" cy="109" r="84" fill="#f5f3f0" stroke="#e8b847" stroke-width="2.5"></circle>
+      </g>
+      <circle cx="360" cy="109" r="73" fill="none" stroke="#242424" stroke-width="1" stroke-opacity="0.06"></circle>
+      <text x="360" y="107" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:24px;font-weight:800;letter-spacing:0.5px;fill:#242424">FOCUS</text>
+      <text x="360" y="132" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;fill:#ff8c00">DAYTIME</text>
+
+      <!-- RELAX node -->
+      <g filter="url(#swk-shadow)">
+        <circle cx="529" cy="401" r="84" fill="#e8b847"></circle>
+      </g>
+      <circle cx="529" cy="401" r="73" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.35"></circle>
+      <text x="529" y="399" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:24px;font-weight:800;letter-spacing:0.5px;fill:#242424">RELAX</text>
+      <text x="529" y="424" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;fill:#242424;fill-opacity:0.62">WIND DOWN</text>
+
+      <!-- SLEEP node -->
+      <g filter="url(#swk-shadow)">
+        <circle cx="191" cy="401" r="84" fill="#b8382d"></circle>
+      </g>
+      <circle cx="191" cy="401" r="73" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.22"></circle>
+      <text x="191" y="399" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:24px;font-weight:800;letter-spacing:0.5px;fill:#fbfbfa">SLEEP</text>
+      <text x="191" y="424" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;fill:#e8b847">NIGHT RITUAL</text>
+    </svg>
+        </div>
+      </div>
+      <div class="col">
+        <div class="lbl">On a phone</div>
+        <div class="frame phone">
+          <svg class="swk" viewBox="0 0 400 770" style="width:100%;height:auto;display:block">
+      <defs>
+        <marker id="swkm-arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M2 2 L9 6 L2 10" fill="none" stroke="#ff8c00" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path>
+        </marker>
+        <filter id="swkm-shadow" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="7" stdDeviation="12" flood-color="#242424" flood-opacity="0.13"></feDropShadow>
+        </filter>
+      </defs>
+
+      <!-- guide track: forward spine + return loop -->
+      <path d="M200 172 V568" fill="none" stroke="#e6e3de" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"></path>
+      <path d="M255 600 C 395 470 395 270 255 140" fill="none" stroke="#e6e3de" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"></path>
+
+      <!-- forward arrows (identical length, stop clear of each circle) -->
+      <g fill="none" stroke="#ff8c00" stroke-width="2.6" stroke-linecap="round" marker-end="url(#swkm-arrow)">
+        <path d="M200 250 V291"></path>
+        <path d="M200 520 V561"></path>
+      </g>
+      <!-- return loop arrow (Sleep -> Focus), edge to edge -->
+      <path d="M255 600 C 395 470 395 270 255 140" fill="none" stroke="#ff8c00" stroke-width="2.6" stroke-linecap="round" marker-end="url(#swkm-arrow)"></path>
+
+      <!-- transition labels -->
+      <g text-anchor="middle">
+        <text x="196" y="216" style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;letter-spacing:1.8px;fill:#ff8c00">PEAK PERFORMANCE</text>
+        <text x="196" y="238" style="font-family:Montserrat,sans-serif;font-size:17px;font-weight:600;fill:#242424">You perform at your best</text>
+
+        <text x="196" y="486" style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;letter-spacing:1.8px;fill:#ff8c00">READY FOR SLEEP</text>
+        <text x="196" y="508" style="font-family:Montserrat,sans-serif;font-size:17px;font-weight:600;fill:#242424">You drift off with ease</text>
+      </g>
+      <!-- return-loop label -->
+      <g text-anchor="middle" transform="rotate(90 314 370)">
+        <text x="314" y="362" style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;letter-spacing:1.8px;fill:#ff8c00">FULL RECOVERY</text>
+        <text x="314" y="384" style="font-family:Montserrat,sans-serif;font-size:17px;font-weight:600;fill:#242424">You wake fully restored</text>
+      </g>
+
+      <!-- FOCUS node -->
+      <g filter="url(#swkm-shadow)"><circle cx="200" cy="100" r="72" fill="#f5f3f0" stroke="#e8b847" stroke-width="2.5"></circle></g>
+      <circle cx="200" cy="100" r="61" fill="none" stroke="#242424" stroke-width="1" stroke-opacity="0.06"></circle>
+      <text x="200" y="98" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:25px;font-weight:800;letter-spacing:0.5px;fill:#242424">FOCUS</text>
+      <text x="200" y="123" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;fill:#ff8c00">DAYTIME</text>
+
+      <!-- RELAX node -->
+      <g filter="url(#swkm-shadow)"><circle cx="200" cy="370" r="72" fill="#e8b847"></circle></g>
+      <circle cx="200" cy="370" r="61" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.35"></circle>
+      <text x="200" y="368" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:25px;font-weight:800;letter-spacing:0.5px;fill:#242424">RELAX</text>
+      <text x="200" y="393" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;fill:#242424;fill-opacity:0.62">WIND DOWN</text>
+
+      <!-- SLEEP node -->
+      <g filter="url(#swkm-shadow)"><circle cx="200" cy="640" r="72" fill="#b8382d"></circle></g>
+      <circle cx="200" cy="640" r="61" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.22"></circle>
+      <text x="200" y="638" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:25px;font-weight:800;letter-spacing:0.5px;fill:#fbfbfa">SLEEP</text>
+      <text x="200" y="663" text-anchor="middle" style="font-family:Montserrat,sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;fill:#e8b847">NIGHT RITUAL</text>
+    </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="cyc-legend">
+      <div style="border-top:1.5px solid #e6e3de;margin-top:16px;padding-top:22px">
+      <div style="text-align:center;font-size:13px;font-weight:600;letter-spacing:0.2em;color:#ff8c00;text-transform:uppercase">What you'll experience</div>
+      <div style="margin-top:14px;display:flex;flex-direction:column">
+        <div style="display:flex;align-items:center;gap:16px;padding:15px 2px;border-top:1px solid #efece6">
+          <div style="display:flex;align-items:center;gap:11px;width:118px;flex:none">
+            <span style="width:13px;height:13px;border-radius:50%;background:#f5f3f0;border:2px solid #e8b847;box-sizing:border-box;flex:none"></span>
+            <span style="font-size:15px;font-weight:700;color:#242424">Focus</span>
+          </div>
+          <div style="font-size:14px;font-weight:400;color:#434447;line-height:1.5">Deep work&nbsp; ·&nbsp; Mental clarity&nbsp; ·&nbsp; Problem solving&nbsp; ·&nbsp; Flow state</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;padding:15px 2px;border-top:1px solid #efece6">
+          <div style="display:flex;align-items:center;gap:11px;width:118px;flex:none">
+            <span style="width:13px;height:13px;border-radius:50%;background:#e8b847;flex:none"></span>
+            <span style="font-size:15px;font-weight:700;color:#242424">Relax</span>
+          </div>
+          <div style="font-size:14px;font-weight:400;color:#434447;line-height:1.5">Stress relief&nbsp; ·&nbsp; Mindfulness&nbsp; ·&nbsp; Clear mind&nbsp; ·&nbsp; Hormone balance</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;padding:15px 2px;border-top:1px solid #efece6;border-bottom:1px solid #efece6">
+          <div style="display:flex;align-items:center;gap:11px;width:118px;flex:none">
+            <span style="width:13px;height:13px;border-radius:50%;background:#b8382d;flex:none"></span>
+            <span style="font-size:15px;font-weight:700;color:#242424">Sleep</span>
+          </div>
+          <div style="font-size:14px;font-weight:400;color:#434447;line-height:1.5">Full rest&nbsp; ·&nbsp; Full recovery&nbsp; ·&nbsp; Ready to focus</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="anno">Mobile comes first here, not last. On a phone the three stages stack top to bottom as one scrolling column, with the return step curving back up the side, so the loop still reads as a loop on a narrow screen. On a wider screen the same three stages open out into a triangle. Same words, same colours, same order, only the arrangement moves. Every section in this document is meant to be built this way, designed for the small screen first and then allowed to breathe on larger ones, since most people reach Swanwick on a phone.</p>
   </div>
 </section>
 
